@@ -30,9 +30,9 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.btnCopy = new System.Windows.Forms.Button();
-            this.txtCoordKey = new System.Windows.Forms.TextBox();
             this.lblCoords = new System.Windows.Forms.Label();
+            this.btnAuto = new System.Windows.Forms.Button();
+            this.txtCoordKey = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -75,28 +75,11 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.lblCoords);
-            this.splitContainer1.Panel2.Controls.Add(this.btnCopy);
+            this.splitContainer1.Panel2.Controls.Add(this.btnAuto);
             this.splitContainer1.Panel2.Controls.Add(this.txtCoordKey);
             this.splitContainer1.Size = new System.Drawing.Size(481, 174);
             this.splitContainer1.SplitterDistance = 128;
             this.splitContainer1.TabIndex = 1;
-            // 
-            // btnCopy
-            // 
-            this.btnCopy.Location = new System.Drawing.Point(222, 10);
-            this.btnCopy.Name = "btnCopy";
-            this.btnCopy.Size = new System.Drawing.Size(75, 23);
-            this.btnCopy.TabIndex = 1;
-            this.btnCopy.Text = "Copiar";
-            this.btnCopy.UseVisualStyleBackColor = true;
-            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
-            // 
-            // txtCoordKey
-            // 
-            this.txtCoordKey.Location = new System.Drawing.Point(93, 12);
-            this.txtCoordKey.Name = "txtCoordKey";
-            this.txtCoordKey.Size = new System.Drawing.Size(123, 20);
-            this.txtCoordKey.TabIndex = 0;
             // 
             // lblCoords
             // 
@@ -106,6 +89,23 @@
             this.lblCoords.Size = new System.Drawing.Size(17, 13);
             this.lblCoords.TabIndex = 2;
             this.lblCoords.Text = "lbl";
+            // 
+            // btnAuto
+            // 
+            this.btnAuto.Location = new System.Drawing.Point(222, 10);
+            this.btnAuto.Name = "btnAuto";
+            this.btnAuto.Size = new System.Drawing.Size(75, 23);
+            this.btnAuto.TabIndex = 1;
+            this.btnAuto.Text = "Auto";
+            this.btnAuto.UseVisualStyleBackColor = true;
+            this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
+            // 
+            // txtCoordKey
+            // 
+            this.txtCoordKey.Location = new System.Drawing.Point(93, 12);
+            this.txtCoordKey.Name = "txtCoordKey";
+            this.txtCoordKey.Size = new System.Drawing.Size(123, 20);
+            this.txtCoordKey.TabIndex = 0;
             // 
             // Form1
             // 
@@ -128,7 +128,7 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button btnCopy;
+        private System.Windows.Forms.Button btnAuto;
         private System.Windows.Forms.TextBox txtCoordKey;
         private System.Windows.Forms.Label lblCoords;
     }

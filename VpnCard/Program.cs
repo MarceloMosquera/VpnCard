@@ -16,7 +16,10 @@ namespace VpnCard
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            if (!(new AutoSet()).FindAndSetKeysOK()) 
+                Application.Run(new Form1());
+            
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -13,7 +14,7 @@ namespace VpnCard
 {
     public partial class Form1 : Form
     {
-
+        
         private readonly Color COLOR_BNT_PRESSED = Color.FromKnownColor(KnownColor.ActiveCaption);
         private readonly Color COLOR_BNT_NOT_PRESSED = Color.FromKnownColor(KnownColor.Control);
 
@@ -83,9 +84,12 @@ namespace VpnCard
                 txtCoordKey.Text = "";
             }
         }
-        private void btnCopy_Click(object sender, EventArgs e)
+
+        private void btnAuto_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(lblCoords.Text);
+            if ((new AutoSet()).FindAndSetKeysOK()) Application.Exit();
         }
+
+
     }
 }
